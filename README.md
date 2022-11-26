@@ -1,11 +1,13 @@
-# How to restore the IMEI (even if you don't have a backup)
+<h1>How to restore IMEI (even if you don't have a backup)</h1>
 <b>Original instruction by slfl from 4pda.to</b>
+<be>
 Needed tools:
-SP Flash Tool, MAUI META
+<a href="https://spflashtool.com/">SP Flash Tool</a>, MAUI META
 
 1. Completely format the phone (format all), remove the garbage.
-2. Unlock the bootloader and flash one of these files, depnding on your phone region: nvram_china.zip
-nvram_global.zip
+2. Unlock the bootloader and flash one of these files, depnding on your phone region:<br>
+<a href="https://github.com/camellian-devs/IMEI-restore/blob/main/files/nvram_china.zip">nvram_china.zip</a><br>
+<a href="https://github.com/camellian-devs/IMEI-restore/blob/main/files/nvram_global.zip">nvram_global.zip</a>
 3. Flash the engineer ROM with Firmware upgrade, then repeat with Download (thus we remove the rescue / cust error)
 4. After downloading the firmware, it is important to make sure in the CIT (phone test program) that we have the IMEI. It will not be displayed in the phone settings!
 5. If everything is fine, reboot the phone into fastboot and clean the nvdata / nvram partitions:
